@@ -11,7 +11,7 @@
 <body>
   <div class="container pt-4">
 
-  <div class="row card rounded-3 d-flex justify-content-center">
+  <div class="card rounded-3 d-flex justify-content-center">
        
         <form class="row d-flex justify-content-center mx-0 p-2">
         
@@ -35,26 +35,35 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
               <label for="CVCnumber" class="form-label">CVC</label>
-              <input type="number" class="form-control" id="CVCnumber" placeholder="XXX" maxlength="3" required>
+              <input type="text" class="form-control" id="CVCnumber" maxlength="3" placeholder="XXX"  required>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
+              
               <label for="mounthText" class="form-label">Mounth</label>
+              <div></div>
+              <div class="input-group d-flex align-items-center">
+              <span class="input-group-text">
+                <b>$</b>
+              </span>
               <input type="text" class="form-control" id="mounthText" placeholder="Mounth" maxlength="20" required>
+           
             </div>
+            </div>
+               
             
             <div class="col-lg-6 col-md-6 col-ms-12 mb-4">
               <label for="firstName" class="form-label">First Name</label>
               <input type="text" class="form-control" id="firstName" placeholder="First Name" maxlength="20" required>
             </div>
-            <div class="col-lg-6 col-md-6 col-ms-12mb-4">
+            <div class="col-lg-6 col-md-6 col-ms-12 mb-4">
               <label for="lastName" class="form-label">Last Name</label>
               <input type="text" class="form-control" id="lastName" placeholder="Last Name" maxlength="20" required>
              </div>
             
            
-             <div class="col-md-6 col-sm-12">
-              <label for="inputState" class="form-label">City</label>
-              <select id="inputState" class="form-select" placeholder="City">
+             <div class="col-lg-6 col-md-6 col-sm-12">
+              <label for="inputCity" class="form-label">City</label>
+              <select id="inputCity" class="form-select" placeholder="City">
                 <option selected>City</option>
                 <option value="AF">Afganistán</option>
 <option value="AL">Albania</option>
@@ -293,7 +302,7 @@
                 
               </select>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <label for="inputState" class="form-label">State</label>
               <select id="inputState" class="form-select" >
                 <option selected >Comunidad Autónoma</option>
@@ -400,8 +409,8 @@
 
             </div>
             <div class="card-footer rounded-3 text-body-secondary d-flex justify-content-end">
-              <button type="button" class="btn btn-secondary">Cancel</button>
-              <button type="button" class="btn btn-primary">Send</button>
+              <button type="button" class="btn btn-secondary" id="buttonCancel">Cancel</button>
+              <button type="button submit" class="btn btn-primary">Send</button>
             </div>
           </form>
 
